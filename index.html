@@ -144,7 +144,7 @@
       }
       function heroMedia(unit){
         const photo = data.photos[unit.outside[0]];
-        if(unit.name === "BN03" || unit.name === "BN04" || unit.name === "BN05") return `<img src="${photo.src}" alt="${photo.title}" style="width:100%;height:auto;object-fit:contain" decoding="async">`;
+        if(unit.name === "BN03") return `<img src="${photo.src}" alt="${photo.title}" style="width:100%;height:auto;object-fit:contain" decoding="async">`;
         if(unit.name === "BN01") return videoMedia("a-hoek-impressie.mp4", photo, "Video-impressie van de hoekwoning");
         if(unit.name === "BN02") return videoMedia("zomertaling-waterzijde.mp4", photo, "Video-impressie van type A vanaf het water");
         if(unit.name.startsWith("A-standaard")) return videoMedia("zomertaling-waterzijde.mp4", photo, "Gedeelde projectimpressie vanaf het water");
